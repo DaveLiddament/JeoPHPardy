@@ -113,10 +113,10 @@
 		</thead>
 		<tbody class="content-money">
 			<?php $dailyDouble = rand(3, 4) . rand(0, 4) ?>
-			<?php for ($row = 0; $row < 5; $row++): ?>
+			<?php for ($row = 0; $row < 4; $row++): ?>
 				<?php $points = ($row + 1) * $game['pointScale'] ?>
 				<tr>
-					<?php for ($col = 0; $col < 5; $col++): ?>
+					<?php for ($col = 0; $col < 4; $col++): ?>
 						<?php $data = $game['categories'][$col]['questions'][$row]; ?>
 						<?php $class = ($dailyDouble === $row . $col) ? 'tile dd' : 'tile' ?>
 						<td class="<?php echo $class ?>" data-points="<?php echo $points ?>"
